@@ -1,7 +1,27 @@
 {
   "name": "framework7-template-split-vue-webpack",
-  "version": "0.1.0",
-  "private": true,
+  "version": "2.1.0",
+  "description": "Framework7 split view starter app template",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zoosky/framework7-template-split-vue-webpack.git"
+  },
+  "keywords": [
+    "framework7",
+    "template",
+    "vue",
+    "ios",
+    "material",
+    "mobile",
+    "app",
+    "f7"
+  ],
+  "author": "Andreas Kapp",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zoosky/framework7-template-split-vue-webpack/issues"
+  },
+  "homepage": "https://github.com/framework7io/framework7-template-split-view#readme",  
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -12,7 +32,12 @@
   "dependencies": {
     "register-service-worker": "^1.0.0",
     "vue": "^2.5.16",
-    "vuex": "^3.0.1"
+    "vuex": "^3.0.1",
+    "framework7": "^2.2.5",
+    "framework7-icons": "^0.8.9",
+    "framework7-vue": "^2.2.5",
+    "material-design-icons": "^3.0.1",
+    "vue": "^2.5.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.0-beta.14",
