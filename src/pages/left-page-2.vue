@@ -1,4 +1,5 @@
-<div class="page">
+<template>
+  <div class="page">
   <div class="navbar">
     <div class="navbar-inner sliding">
       <div class="left">
@@ -19,4 +20,4 @@
     </div>
   </div>
 </div>
-
+</template>
