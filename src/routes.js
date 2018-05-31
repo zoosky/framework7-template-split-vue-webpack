@@ -12,40 +12,33 @@ import PanelRightPage from "./pages/panel-right.vue";
 export default [
   {
     path: "/",
-    url: "./index.html",
     compoent: HomePage
   },
   {
     path: "/about/",
-    url: "./pages/about.html",
     component: AboutPage
   },
   {
     path: "/form/",
-    url: "./pages/form.html",
     component: FormPage
   },
   // Left View Pages
   {
     path: "/left-page-1/",
-    url: "./pages/left-page-1.html",
     compoent: LeftPage1
   },
   {
     path: "/left-page-2/",
-    url: "./pages/left-page-2.html",
     component: LeftPage2
   },
   // Right View Pages
   {
     path: "/panel-left/",
-    url: "./pages/left-page-1.html",
     compoent: PanelLeftPage
   },
 
   {
     path: "/panel-right/",
-    url: "./pages/left-page-1.html",
     compoent: PanelRightPage
   },
 
@@ -114,7 +107,6 @@ export default [
   // Default route (404 page). MUST BE THE LAST
   {
     path: "(.*)",
-    url: "./pages/404.html",
     component: NotFoundPage
   }
 ];

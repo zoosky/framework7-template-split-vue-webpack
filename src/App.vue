@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-   <home></home>
+    <!-- Statusbar -->
+    <f7-statusbar></f7-statusbar>
+    <home></home>
   </div>
 </template>
 
