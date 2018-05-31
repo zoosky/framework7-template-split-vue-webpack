@@ -1,105 +1,93 @@
 <template>
-        <!-- Your main view, should have "view-main" class -->
-    <div class="view view-main ios-edges">
-      <!-- Page, data-name contains page name which can be used in callbacks -->
-      <div class="page" data-name="home">
-        <!-- Top Navbar -->
-        <div class="navbar">
-          <div class="navbar-inner">
-            <div class="left">
-              <a href="#" class="link icon-only panel-open" data-panel="left">
-                <i class="icon f7-icons ios-only">menu</i>
-                <i class="icon material-icons md-only">menu</i>
-              </a>
-            </div>
-            <div class="title sliding">My App</div>
-            <div class="right">
-              <a href="#" class="link icon-only panel-open" data-panel="right">
-                <i class="icon f7-icons ios-only">menu</i>
-                <i class="icon material-icons md-only">menu</i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <!-- Toolbar-->
-        <div class="toolbar">
-          <div class="toolbar-inner">
-            <a href="#" class="link">Left Link</a>
-            <a href="#" class="link">Right Link</a>
-          </div>
-        </div>
-        <!-- Scrollable page content-->
-        <div class="page-content">
-          <div class="block block-strong">
-            <p>This is an example of split view application layout, commonly used on tablets. The main approach of such kind of layout is that you can see different views at the same time.</p>
+  <f7-page name="home">
+      <!-- Main view-->
+      <f7-view main ios-edges>
+        <f7-page>
+          <f7-navbar>
+            <f7-nav-left>
+              <f7-link icon-if-ios="f7:menu" icon-if-md="material:menu" panel-open="left"></f7-link>
+            </f7-nav-left>
+            <f7-nav-title>My App</f7-nav-title>
+            <f7-nav-right>
+              <f7-link icon-if-ios="f7:menu" icon-if-md="material:menu" panel-open="right"></f7-link>
+            </f7-nav-right>
+          </f7-navbar>
 
-            <p>Each view may have different layout, different navbar type (dynamic, fixed or static) or without navbar.</p>
+          <!-- Toolbar-->
+          <f7-toolbar>
+            <f7-link>Left Link</f7-link>
+            <f7-link>Right Link</f7-link>
+          </f7-toolbar>
+          <f7-block strong>
+            <p>Here is your blank Framework7 app. Let's see what we have here.</p>
+          </f7-block>
+              <!-- Page content -->
+          <f7-block>
+            <p>Here comes main view page text</p>
+          </f7-block>
+          <f7-block-title>Navigation</f7-block-title>
+          <f7-list>
+            <f7-list-item link="/about/" title="About"></f7-list-item>
+            <f7-list-item link="/form/" title="Form"></f7-list-item>
+          </f7-list>
+        </f7-page>
+      
 
-            <p>The fun thing is that you can easily control one view from another without any line of JavaScript just using "data-view" attribute on links.</p>
-          </div>
+      <f7-block-title>Panels</f7-block-title>
+      <f7-block strong>
+        <f7-row>
+          <f7-col width="50">
+            <f7-button fill raised panel-open="left">Left Panel</f7-button>
+          </f7-col>
+          <f7-col width="50">
+            <f7-button fill raised panel-open="right">Right Panel</f7-button>
+          </f7-col>
+        </f7-row>
+      </f7-block>
 
-          <div class="block-title">Navigation</div>
-          <div class="list">
-            <ul>
-              <li>
-                <a href="/about/" class="item-content item-link">
-                  <div class="item-inner">
-                    <div class="item-title">About</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="/form/" class="item-content item-link">
-                  <div class="item-inner">
-                    <div class="item-title">Form</div>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
+    </f7-view>
 
-          <div class="block-title">Modals</div>
-          <div class="block block-strong">
-            <div class="row">
-              <div class="col-50">
-                <a href="#" class="button button-raised button-fill popup-open" data-popup="#my-popup">Popup</a>
-              </div>
-              <div class="col-50">
-                <a href="#" class="button button-raised button-fill login-screen-open" data-login-screen="#my-login-screen">Login Screen</a>
-              </div>
-            </div>
-          </div>
+    <f7-block strong>
+      <p>This is an example of split view application layout, commonly used on tablets. The main approach of such kind of layout is that you can see different views at the same time.</p>
 
-          <div class="block-title">Panels</div>
-          <div class="block block-strong">
-            <div class="row">
-              <div class="col-50">
-                <a href="#" class="button button-raised button-fill panel-open" data-panel="left">Left Panel</a>
-              </div>
-              <div class="col-50">
-                <a href="#" class="button button-raised button-fill panel-open" data-panel="right">Right Panel</a>
-              </div>
-            </div>
-          </div>
+      <p>Each view may have different layout, different navbar type (dynamic, fixed or static) or without navbar.</p>
 
-          <div class="block-title searchbar-hide-on-search">Page Loaders & Router</div>
-          <div class="list links-list searchbar-hide-on-search">
-            <ul>
-              <li>
-                <a href="/page-loader-template7/vladimir/123/about-me/1/?start=0&end=30#top">Template7 Page</a>
-              </li>
-              <li>
-                <a href="/page-loader-component/vladimir/123/about-me/1/?start=0&end=30#top">Component Page</a>
-              </li>
-              <li>
-                <a href="/load-something-that-doesnt-exist/">Default Route (404)</a>
-              </li>
-              <li>
-                <a href="/request-and-load/user/123456/">Request Data & Load</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
+      <p>The fun thing is that you can easily control one view from another without any line of JavaScript just using "data-view" attribute on links.</p>
+    </f7-block>
+
+
+          <f7-block-title>Modals</f7-block-title>
+          <f7-block strong>
+            <f7-row>
+              <f7-col width="50">
+                <f7-button fill raised popup-open="#popup">Popup</f7-button>
+              </f7-col>
+              <f7-col width="50">
+                <f7-button fill raised login-screen-open="#login-screen">Login Screen</f7-button>
+              </f7-col>
+            </f7-row>
+          </f7-block>
+
+          <f7-block-title>Panels 1</f7-block-title>
+          <f7-block strong>
+            <f7-row>
+              <f7-col width="50">
+                <f7-button fill raised panel-open="left">Left Panel</f7-button>
+              </f7-col>
+              <f7-col width="50">
+                <f7-button fill raised panel-open="right">Right Panel</f7-button>
+              </f7-col>
+            </f7-row>
+          </f7-block>
+
+          <f7-block-title searchbar-hide-on-search>Page Loaders & Router</f7-block-title>
+          <f7-list searchbar-hide-on-search>
+            <f7-list-item link="/dynamic-route/blog/45/post/125/?foo=bar#about" title="Dynamic Route"></f7-list-item>
+            <f7-list-item link="/load-something-that-doesnt-exist/" title="Default Route (404)"></f7-list-item>
+            <f7-list-item link="/page-loader-template7/vladimir/123/about-me/1/?start=0&end=30#top" title="Template7 Page"></f7-list-item>
+            <f7-list-item link="/page-loader-component/vladimir/123/about-me/1/?start=0&end=30#top" title="Component Page"></f7-list-item>
+            <f7-list-item link="/request-and-load/user/123456/" title="Request Data & Load"></f7-list-item>
+          </f7-list>
+       
+  </f7-page>
 </template>
