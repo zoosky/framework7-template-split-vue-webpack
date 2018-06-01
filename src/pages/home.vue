@@ -1,6 +1,6 @@
 <template>
 <!-- Main view-->
-<f7-view main ios-edges>
+<f7-view id="main-view" main ios-edges>
       
   <f7-page name="home">
     <f7-navbar>
@@ -14,9 +14,7 @@
     </f7-navbar>
     <f7-block strong>
       <p>This is an example of split view application layout, commonly used on tablets. The main approach of such kind of layout is that you can see different views at the same time.</p>
-
       <p>Each view may have different layout, different navbar type (dynamic, fixed or static) or without navbar.</p>
-
       <p>The fun thing is that you can easily control one view from another without any line of JavaScript just using "data-view" attribute on links.</p>
     </f7-block>
     
@@ -27,6 +25,8 @@
     <f7-list>
       <f7-list-item link="/about/" title="About"></f7-list-item>
       <f7-list-item link="/form/" title="Form"></f7-list-item>
+      <f7-list-item link="/left-page-1/" title="Page Left 1"></f7-list-item>
+      <f7-list-item link="/left-page-2/" title="Page Left 2"></f7-list-item>
     </f7-list>
 
     <f7-block-title>Panels</f7-block-title>

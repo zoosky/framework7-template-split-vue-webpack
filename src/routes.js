@@ -36,7 +36,6 @@ export default [
     path: "/panel-left/",
     compoent: PanelLeftPage
   },
-
   {
     path: "/panel-right/",
     compoent: PanelRightPage
