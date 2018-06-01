@@ -2,7 +2,7 @@ import HomePage from "./pages/home.vue";
 import AboutPage from "./pages/about.vue";
 import FormPage from "./pages/form.vue";
 import DynamicRoutePage from "./pages/dynamic-route.vue";
-import NotFoundPage from "./pages/404.vue";
+import NotFoundPage from "./pages/not-found.vue";
 
 import LeftPage1 from "./pages/left-page-1.vue";
 import LeftPage2 from "./pages/left-page-2.vue";
@@ -12,7 +12,7 @@ import PanelRightPage from "./pages/panel-right.vue";
 export default [
   {
     path: "/",
-    compoent: HomePage
+    component: HomePage
   },
   {
     path: "/about/",
@@ -25,7 +25,7 @@ export default [
   // Left View Pages
   {
     path: "/left-page-1/",
-    compoent: LeftPage1
+    component: LeftPage1
   },
   {
     path: "/left-page-2/",
@@ -34,11 +34,11 @@ export default [
   // Right View Pages
   {
     path: "/panel-left/",
-    compoent: PanelLeftPage
+    component: PanelLeftPage
   },
   {
     path: "/panel-right/",
-    compoent: PanelRightPage
+    component: PanelRightPage
   },
 
   // Page Loaders & Router
