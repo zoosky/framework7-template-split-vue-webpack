@@ -2,7 +2,10 @@
   <div id="app">
     <!-- Statusbar -->
     <f7-statusbar></f7-statusbar>
-    <home></home>
+          <!-- Main view-->
+    <f7-view main ios-edges>
+      <home></home>
+    </f7-view>
   </div>
 </template>
 
