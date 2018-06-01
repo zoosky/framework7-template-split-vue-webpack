@@ -4,11 +4,8 @@
     <f7-statusbar></f7-statusbar>
     <panel-left></panel-left>
     <panel-right></panel-right>
-          <!-- Main view-->
-    <f7-view main ios-edges>
-      
-      <home></home>
-    </f7-view>
+    <!-- Main view-->      
+    <home></home>
     <pop-up></pop-up>
   </div>
 </template>
