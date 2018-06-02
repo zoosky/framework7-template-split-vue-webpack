@@ -1,7 +1,7 @@
     <template>
       <!-- Left panel with reveal effect when hidden -->
       <f7-panel left reveal>
-        <f7-view url="/panel-left/">
+        <f7-view url="/panel-left/" name="panel-left">
           <f7-page>
             <f7-navbar title="Left Panel"></f7-navbar>
             <f7-block strong>

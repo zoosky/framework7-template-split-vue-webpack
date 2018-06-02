@@ -1,6 +1,6 @@
 <template>
 <!-- Main view-->
-<f7-view id="main-view" main ios-edges>
+<f7-view id="main-view" main name="main-view" ios-edges>
       
   <f7-page name="home">
     <f7-navbar>

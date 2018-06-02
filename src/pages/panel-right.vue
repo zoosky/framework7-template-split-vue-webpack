@@ -1,6 +1,6 @@
 <template>
   <f7-panel right reveal cover theme-dark>
-    <f7-view url="/panel-right/">
+    <f7-view url="/panel-right/" name="panel-rigth">
       <f7-page>
         <f7-navbar title="Right Panel" sliding></f7-navbar>
         <f7-block>
