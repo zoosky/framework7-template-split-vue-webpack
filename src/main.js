@@ -38,6 +38,12 @@ new Vue({
     // Enable panel left visibility breakpoint
     panel: {
       leftBreakpoint: 960
+    },
+    view: {
+      // configuration examples
+      iosDynamicNavbar: true, //default: true
+      xhrCache: true, //default: true
+      pushState: true //default: false
     }
   },
   store,
