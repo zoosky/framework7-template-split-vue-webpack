@@ -9,14 +9,18 @@ import LeftPage2 from "./pages/left-page-2.vue";
 import PanelLeftPage from "./pages/panel-left.vue";
 import PanelRightPage from "./pages/panel-right.vue";
 
+import RoutesEvents from "./routers-events.js";
+
 export default [
   {
     path: "/",
-    component: HomePage
+    component: HomePage,
+    on: RoutesEvents
   },
   {
     path: "/about/",
-    component: AboutPage
+    component: AboutPage,
+    on: RoutesEvents
   },
   {
     path: "/form/",
