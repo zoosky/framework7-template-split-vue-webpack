@@ -1,11 +1,10 @@
 {
   "name": "framework7-template-split-vue-webpack",
-  "version": "2.1.0",
+  "version": "2.3.0",
   "description": "Framework7 split view starter app template",
   "repository": {
     "type": "git",
-    "url":
-      "git+https://github.com/zoosky/framework7-template-split-vue-webpack.git"
+    "url": "git+https://github.com/zoosky/framework7-template-split-vue-webpack.git"
   },
   "keywords": [
     "framework7",
@@ -20,20 +19,20 @@
   "author": "Andreas Kapp",
   "license": "MIT",
   "bugs": {
-    "url":
-      "https://github.com/zoosky/framework7-template-split-vue-webpack/issues"
+    "url": "https://github.com/zoosky/framework7-template-split-vue-webpack/issues"
   },
-  "homepage":
-    "https://github.com/framework7io/framework7-template-split-view#readme",
+  "homepage": "https://github.com/framework7io/framework7-template-split-view#readme",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit",
-    "test:e2e": "vue-cli-service test:e2e"
+    "test:e2e": "vue-cli-service test:e2e",
+    "release": "bash scripts/release.sh",
+    "release:note": "node scripts/gen-release-note.js"
   },
   "dependencies": {
-    "framework7": "^2.2.5",
+    "framework7": "^2.3.0",
     "framework7-icons": "^0.8.9",
     "framework7-vue": "^2.2.5",
     "material-design-icons": "^3.0.1",
@@ -56,5 +55,9 @@
     "sass-loader": "^7.0.1",
     "vue-template-compiler": "^2.5.16"
   },
-  "browserslist": ["> 1%", "last 2 versions", "not ie <= 8"]
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
 }
