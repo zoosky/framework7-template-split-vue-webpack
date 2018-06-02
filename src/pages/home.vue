@@ -61,6 +61,7 @@
       <f7-list-item link="/page-loader-component/vladimir/123/about-me/1/?start=0&end=30#top" title="Component Page"></f7-list-item>
       <f7-list-item link="/request-and-load/user/123456/" title="Request Data & Load"></f7-list-item>
     </f7-list>
+    <version></version>
     <!-- Toolbar-->
     <f7-toolbar>
       <f7-link>Left Link</f7-link>
@@ -69,3 +70,13 @@
   </f7-page>
 </f7-view>
 </template>
+
+<script>
+import version from "./../components/version.vue";
+
+export default {
+  components: {
+    version
+  }
+};
+</script>
