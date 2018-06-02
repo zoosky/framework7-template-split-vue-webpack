@@ -9,6 +9,7 @@ import pkg from "./../../package.json";
 export default {
   computed: {
     version: () => {
+      // eslint-disable-next-line
       console.log("pkg", pkg.version);
       return pkg.version;
     }
