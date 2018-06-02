@@ -34,7 +34,11 @@ new Vue({
     name: "Framework7", // App name
     theme: "auto", // Automatic theme detection
     // App routes
-    routes: Routes
+    routes: Routes,
+    // Enable panel left visibility breakpoint
+    panel: {
+      leftBreakpoint: 960
+    }
   },
   store,
   render: h => h(App)
