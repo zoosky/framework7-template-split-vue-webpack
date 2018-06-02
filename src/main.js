@@ -31,7 +31,7 @@ new Vue({
   // Init Framework7 by passing parameters here
   framework7: {
     id: "io.framework7.testapp", // App bundle ID
-    name: "Framework7", // App name
+    name: "Framework7 Split-View with Vuejs Compnents", // App name
     theme: "auto", // Automatic theme detection
     // App routes
     routes: Routes,
