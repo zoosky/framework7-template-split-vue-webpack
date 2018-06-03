@@ -17,6 +17,8 @@
       <p>Each view may have different layout, different navbar type (dynamic, fixed or static) or without navbar.</p>
       <p>The fun thing is that you can easily control one view from another without any line of JavaScript just using "data-view" attribute on links.</p>
     </f7-block>
+
+    <time-stamp></time-stamp>    
     
     <f7-block>
       <p>Here comes main view page text</p>
@@ -28,7 +30,8 @@
       <f7-list-item link="/left-page-1/" title="Page Left 1"></f7-list-item>
       <f7-list-item link="/left-page-2/" title="Page Left 2"></f7-list-item>
     </f7-list>
-
+    
+    
     <f7-block-title>Panels</f7-block-title>
     <f7-block strong>
       <f7-row>
@@ -61,6 +64,7 @@
       <f7-list-item link="/page-loader-component/vladimir/123/about-me/1/?start=0&end=30#top" title="Component Page"></f7-list-item>
       <f7-list-item link="/request-and-load/user/123456/" title="Request Data & Load"></f7-list-item>
     </f7-list>
+    
     <version></version>
     <!-- Toolbar-->
     <f7-toolbar>
@@ -73,10 +77,12 @@
 
 <script>
 import version from "./../components/version.vue";
+import TimeStamp from "./../components/time.vue";
 
 export default {
   components: {
-    version
+    version,
+    TimeStamp
   }
 };
 </script>
