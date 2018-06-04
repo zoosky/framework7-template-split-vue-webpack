@@ -1,34 +1,11 @@
 {
   "name": "framework7-template-split-vue-webpack",
   "version": "2.3.0",
-  "description": "Framework7 split view starter app template",
-  "repository": {
-    "type": "git",
-    "url":
-      "git+https://github.com/zoosky/framework7-template-split-vue-webpack.git"
-  },
-  "keywords": [
-    "framework7",
-    "template",
-    "vue",
-    "ios",
-    "material",
-    "mobile",
-    "app",
-    "f7"
-  ],
-  "author": "Andreas Kapp",
-  "license": "MIT",
-  "bugs": {
-    "url":
-      "https://github.com/zoosky/framework7-template-split-vue-webpack/issues"
-  },
-  "homepage":
-    "https://github.com/framework7io/framework7-template-split-view#readme",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
+    "prod": "vue-cli-service serve --mode production",
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
     "release": "bash scripts/release.sh",
@@ -47,7 +24,7 @@
     "@vue/cli-plugin-babel": "^3.0.0-beta.14",
     "@vue/cli-plugin-e2e-cypress": "^3.0.0-beta.14",
     "@vue/cli-plugin-eslint": "^3.0.0-beta.14",
-    "@vue/cli-plugin-pwa": "^3.0.0-beta.14",
+    "@vue/cli-plugin-pwa": "^3.0.0-beta.15",
     "@vue/cli-plugin-unit-jest": "^3.0.0-beta.14",
     "@vue/cli-service": "^3.0.0-beta.14",
     "@vue/eslint-config-prettier": "^3.0.0-beta.14",
@@ -58,5 +35,29 @@
     "sass-loader": "^7.0.1",
     "vue-template-compiler": "^2.5.16"
   },
-  "browserslist": ["> 1%", "last 2 versions", "not ie <= 8"]
+  "browserslist": ["> 1%", "last 2 versions", "not ie <= 8"],
+  "author": "Andreas Kapp",
+  "bugs": {
+    "url":
+      "https://github.com/zoosky/framework7-template-split-vue-webpack/issues"
+  },
+  "homepage":
+    "https://github.com/framework7io/framework7-template-split-view#readme",
+  "keywords": [
+    "framework7",
+    "template",
+    "vue",
+    "ios",
+    "material",
+    "mobile",
+    "app",
+    "f7"
+  ],
+  "repository": {
+    "type": "git",
+    "url":
+      "git+https://github.com/zoosky/framework7-template-split-vue-webpack.git"
+  },
+  "description": "Framework7 split view starter app template",
+  "license": "MIT"
 }

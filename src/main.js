@@ -22,7 +22,7 @@ import AppStyles from "./assets/css/app.css";
 // Import Routes
 import Routes from "./routes.js";
 
-import './registerServiceWorker'
+import "./registerServiceWorker";
 
 // Init F7 Vue Plugin
 Vue.use(Framework7Vue, Framework7);
