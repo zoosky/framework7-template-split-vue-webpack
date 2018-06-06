@@ -7,6 +7,7 @@
     <!-- Main view-->      
     <home></home>
     <pop-up></pop-up>
+    <login-screen></login-screen>
   </div>
 </template>
 
@@ -15,13 +16,15 @@ import Home from "./pages/home.vue";
 import PanelLeft from "./pages/panel-left.vue";
 import PanelRight from "./pages/panel-right.vue";
 import PopUp from "./components/popup.vue";
+import LoginScreen from "./components/login-screen.vue";
 export default {
   name: "app",
   components: {
     Home,
     PanelLeft,
     PanelRight,
-    PopUp
+    PopUp,
+    LoginScreen
   }
 };
 </script>
