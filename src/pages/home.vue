@@ -29,6 +29,7 @@
       <f7-list-item link="/form/" title="Form"></f7-list-item>
       <f7-list-item link="/left-page-1/" title="Page Left 1"></f7-list-item>
       <f7-list-item link="/left-page-2/" title="Page Left 2"></f7-list-item>
+      <f7-list-item link="/tabs-routable/" title="Tabs Routable"></f7-list-item>
     </f7-list>
     
     

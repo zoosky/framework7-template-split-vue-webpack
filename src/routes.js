@@ -9,6 +9,11 @@ import LeftPage2 from "./pages/left-page-2.vue";
 import PanelLeftPage from "./pages/panel-left.vue";
 import PanelRightPage from "./pages/panel-right.vue";
 
+import TabsRoutable from "./pages/tabs-routable.vue";
+import Tab1 from "./pages/tabs/tab1.vue";
+import Tab2 from "./pages/tabs/tab2.vue";
+import Tab3 from "./pages/tabs/tab3.vue";
+
 import RoutesEvents from "./routers-events.js";
 
 export default [
@@ -43,6 +48,27 @@ export default [
   {
     path: "/panel-right/",
     component: PanelRightPage
+  },
+  {
+    path: "/tabs-routable/",
+    component: TabsRoutable,
+    tabs: [
+      {
+        path: "/",
+        id: "tab1",
+        component: Tab1
+      },
+      {
+        path: "/tab2/",
+        id: "tab2",
+        component: Tab2
+      },
+      {
+        path: "/tab3/",
+        id: "tab3",
+        component: Tab3
+      }
+    ]
   },
 
   // Page Loaders & Router
