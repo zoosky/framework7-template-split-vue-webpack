@@ -14,6 +14,8 @@ import Tab1 from "./pages/tabs/tab1.vue";
 import Tab2 from "./pages/tabs/tab2.vue";
 import Tab3 from "./pages/tabs/tab3.vue";
 
+import RequestAndLoad from "./pages/request-and-load.vue";
+
 import RoutesEvents from "./routers-events.js";
 
 export default [
@@ -81,8 +83,11 @@ export default [
     componentUrl: "./pages/page-loader-component.html"
   },
   {
+    path: "/dynamic-route/blog/:blogId/post/:postId/",
+    component: DynamicRoutePage
+  },
+  {
     path: "/request-and-load/user/:userId/",
-    component: DynamicRoutePage,
     async: function(routeTo, routeFrom, resolve /* reject */) {
       // Router instance
       var router = this;
@@ -100,6 +105,7 @@ export default [
       // Simulate Ajax Request
       setTimeout(function() {
         // We got user data from request
+        console.log("route", routeTo, routeFrom);
         var user = {
           firstName: "Vladimir",
           lastName: "Kharlampidi",
@@ -121,7 +127,7 @@ export default [
         // Resolve route to load page
         resolve(
           {
-            componentUrl: "./pages/request-and-load.html"
+            component: RequestAndLoad
           },
           {
             context: {

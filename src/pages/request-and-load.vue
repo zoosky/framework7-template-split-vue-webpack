@@ -16,15 +16,15 @@
         {{user.about}}
       </div>
       <div class="list links-list">
-        <ul>
+        <ul><!-- TODO
           {{#each user.links}}
             <li><a class="external" target="_blank" href="{{url}}">{{title}}</a></li>
-          {{/each}}
+          {{/each}} -->
         </ul>
       </div>
     </div>
   </div>
 </template>
 <script>
-  return {}
+export default {};
 </script>
