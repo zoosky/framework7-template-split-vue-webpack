@@ -49,5 +49,22 @@ new Vue({
     }
   },
   store,
+  methods: {
+    onF7Ready(f7) {
+      // do some f7 related logic
+      // f7.dialog.alert("App initialized");
+      console.log("App initialized", f7, "Utils", this.$utils);
+    },
+    onF7RouteChange(newRoute, previousRoute, router) {
+      console.log(
+        "newRoute: ",
+        newRoute,
+        ", previousRoute: ",
+        previousRoute,
+        ", router: ",
+        router
+      );
+    }
+  },
   render: h => h(App)
 }).$mount("#app");
