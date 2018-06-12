@@ -10,6 +10,8 @@ import PanelLeftPage from "./pages/panel-left.vue";
 import PanelRightPage from "./pages/panel-right.vue";
 
 import TabsRoutable from "./pages/tabs-routable.vue";
+
+import Tab0 from "./pages/tabs/tab0.vue";
 import Tab1 from "./pages/tabs/tab1.vue";
 import Tab2 from "./pages/tabs/tab2.vue";
 import Tab3 from "./pages/tabs/tab3.vue";
@@ -57,6 +59,11 @@ export default [
     tabs: [
       {
         path: "/",
+        id: "tab0",
+        component: Tab0
+      },
+      {
+        path: "/tab1/",
         id: "tab1",
         component: Tab1
       },
