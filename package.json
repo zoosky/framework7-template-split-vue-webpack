@@ -35,14 +35,16 @@
     "sass-loader": "^7.0.1",
     "vue-template-compiler": "^2.5.16"
   },
-  "browserslist": ["> 1%", "last 2 versions", "not ie <= 8"],
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
   "author": "Andreas Kapp",
   "bugs": {
-    "url":
-      "https://github.com/zoosky/framework7-template-split-vue-webpack/issues"
+    "url": "https://github.com/zoosky/framework7-template-split-vue-webpack/issues"
   },
-  "homepage":
-    "https://github.com/framework7io/framework7-template-split-view#readme",
+  "homepage": "https://github.com/framework7io/framework7-template-split-view#readme",
   "keywords": [
     "framework7",
     "template",
@@ -55,8 +57,7 @@
   ],
   "repository": {
     "type": "git",
-    "url":
-      "git+https://github.com/zoosky/framework7-template-split-vue-webpack.git"
+    "url": "git+https://github.com/zoosky/framework7-template-split-vue-webpack.git"
   },
   "description": "Framework7 split view starter app template",
   "license": "MIT"

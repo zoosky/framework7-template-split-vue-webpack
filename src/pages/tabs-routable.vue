@@ -8,7 +8,7 @@
       </f7-nav-right>
     </f7-navbar>
     <f7-toolbar tabbar labels>
-      <f7-link tab-link href="./" route-tab-id="tab0" icon-if-ios="f7:home" text="Home" ></f7-link>
+      <f7-link tab-link href="./" route-tab-id="tab0" icon-if-ios="f7:home" text="Home 0" ></f7-link>
       <f7-link tab-link href="tab1/" route-tab-id="tab1" icon-if-ios="f7:person" text="Tab 1" ></f7-link>
       
       <f7-link tab-link href="tab2/" route-tab-id="tab2">Tab 2</f7-link>
