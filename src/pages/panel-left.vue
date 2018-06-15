@@ -19,7 +19,10 @@
             <f7-list>
               <f7-list-item link="/about/" title="About" view="#main-view" panel-close></f7-list-item>
               <f7-list-item link="/form/" title="Form" view="#main-view" panel-close></f7-list-item>
-              <f7-list-item link="/left-page-1/" title="Page Left 1" view="#main-view" panel-close></f7-list-item>
+              <f7-list-item link="/left-page-1/" title="Page Left 1" view="#main-view" panel-close>
+                <f7-icon if-ios="f7:drawer" if-md="material:inbox"> 
+                </f7-icon>
+              </f7-list-item>
               <f7-list-item link="/left-page-2/" title="Page Left 2" view="#main-view" panel-close></f7-list-item>
             </f7-list>
           </f7-page>    

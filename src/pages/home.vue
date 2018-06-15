@@ -9,13 +9,17 @@
       </f7-nav-left>
       <f7-nav-title>My App</f7-nav-title>
       <f7-nav-right>
+        <f7-link v-if="$theme.md" icon="material:compare_arrows" @click="toggleToolbarPosition">
+          <i class="icon material-icons rotate-icon">compare_arrows</i>
+        </f7-link>
         <f7-link icon-if-ios="f7:menu" icon-if-md="material:menu" panel-open="right"></f7-link>
+        
       </f7-nav-right>
     </f7-navbar>
         <!-- Toolbar, fixed on bottom -->
       <f7-toolbar>
         <f7-link text="Page Left" href="/left-page-1/">
-          <f7-icon if-ios="f7:drawer" if-md="material:drawer" active>
+          <f7-icon if-ios="f7:drawer" if-md="material:inbox" active>
 
           </f7-icon>
         </f7-link>
@@ -100,6 +104,13 @@ export default {
   components: {
     version,
     TimeStamp
+  },
+  methods: {
+    toggleToolbarPosition() {
+      this.$$(this.$el)
+        .find(".toolbar, .tabbar")
+        .toggleClass("toolbar-bottom-md");
+    }
   }
 };
 </script>
