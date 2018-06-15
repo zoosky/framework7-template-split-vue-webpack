@@ -12,7 +12,7 @@
         <f7-link icon-if-ios="f7:menu" icon-if-md="material:menu" panel-open="right"></f7-link>
       </f7-nav-right>
     </f7-navbar>
-        <!-- Toolbar, scrollable -->
+        <!-- Toolbar, fixed on bottom -->
       <f7-toolbar>
         <f7-link text="Page Left" href="/left-page-1/">
           <f7-icon if-ios="f7:drawer" if-md="material:drawer" active>
