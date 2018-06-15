@@ -12,6 +12,26 @@
         <f7-link icon-if-ios="f7:menu" icon-if-md="material:menu" panel-open="right"></f7-link>
       </f7-nav-right>
     </f7-navbar>
+        <!-- Toolbar, scrollable -->
+      <f7-toolbar>
+        <f7-link text="Page Left" href="/left-page-1/">
+          <f7-icon if-ios="f7:drawer" if-md="material:drawer" active>
+
+          </f7-icon>
+        </f7-link>
+        <f7-link>
+          <f7-icon if-ios="f7:today" if-md="material:today">
+            <f7-badge color="red">7</f7-badge>
+          </f7-icon>
+        </f7-link>
+        <f7-link text="Form" href="/form/">
+          <f7-icon if-ios="f7:settings" if-md="material:settings">
+            <f7-badge color="green">2</f7-badge>
+          </f7-icon> 
+        </f7-link>
+
+    </f7-toolbar>  
+
     <f7-block strong>
       <p>This is an example of split view application layout, commonly used on tablets. The main approach of such kind of layout is that you can see different views at the same time.</p>
       <p>Each view may have different layout, different navbar type (dynamic, fixed or static) or without navbar.</p>
@@ -67,11 +87,7 @@
     </f7-list>
     
     <version></version>
-    <!-- Toolbar-->
-    <f7-toolbar>
-      <f7-link>Left Link</f7-link>
-      <f7-link>Right Link</f7-link>
-    </f7-toolbar>              
+            
   </f7-page>
 </f7-view>
 </template>
