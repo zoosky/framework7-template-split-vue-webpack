@@ -35,7 +35,7 @@ export default {
       // Framework7 parameters here
       f7params: {
         id: "io.framework7.testapp", // App bundle ID
-        name: "Framework7 Split-View with Vuejs Compnents", // App name
+        name: "Framework7 Split-View with Vuejs Components", // App name
         theme: "auto", // Automatic theme detection
         // App routes
         routes: Routes,
