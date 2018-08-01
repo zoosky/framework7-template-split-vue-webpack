@@ -1,6 +1,6 @@
 # framework7-template-split-vue-webpack
 
-Demo: https://github.com/zoosky/framework7-template-split-vue-webpack
+Demo: https://objective-knuth-82f1e2.netlify.com/
 
 Based roughly on the [framework7-template-split-view](https://github.com/framework7io/framework7-template-split-view) template.
 
