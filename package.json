@@ -1,6 +1,6 @@
 {
   "name": "framework7-template-split-vue-webpack",
-  "version": "3.0.1",
+  "version": "3.1.0",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -12,9 +12,9 @@
     "release:note": "node scripts/gen-release-note.js"
   },
   "dependencies": {
-    "framework7": "^3.0.0",
+    "framework7": "^3.1.0",
     "framework7-icons": "^0.9.1",
-    "framework7-vue": "^3.0.0",
+    "framework7-vue": "^3.1.0",
     "material-design-icons": "^3.0.1",
     "register-service-worker": "^1.0.0",
     "vue": "^2.5.16",
